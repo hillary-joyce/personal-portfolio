@@ -1,0 +1,97 @@
+.header {
+  height: 100vh;
+  text-align: center;
+  background-image: url("../images/watercolor-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+}
+
+.about-me {
+    height: 100vh;
+    background-image: url("../images/watercolor-2.png");
+    background-size: 80vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.personal-info {
+  width: 50vw;
+  padding-left: 15%;
+  font-size: 1.5em;
+  padding-top: 15%;
+}
+
+.skills {
+  height: 100vh;
+  text-align: right;
+  background-image: url("../images/watercolor-4.png");
+  background-size: 80vh;
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+.skills-info {
+  width: 50vw;
+  position: absolute;
+  font-size: 1.5em;
+  right: 15%;
+}
+
+.projects {
+  height: 100vh;
+  background-image: url("../images/watercolor-3.png");
+  background-size: 65vh;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hex-letter {
+  height: 115px;
+  width: 100px;
+  background-image: url(../app.png);
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin: -3px;
+  text-align: center;
+  opacity: 0;
+}
+
+.hex-letter p {
+  font-size: 75px;
+}
+
+.first-name {
+  margin-top: -20px;
+}
+
+.last-name {
+    margin-top: -25px;
+}
+
+.hex-1, .hex-10, .hex-15 {
+  transition: transform 1500ms ease-in 200ms, opacity 1500ms ease-in-out 200ms;
+}
+
+.hex-2, .hex-7, .hex-12 {
+  transition: transform 1500ms ease-in 500ms, opacity 1500ms ease-in-out 500ms;
+}
+
+.hex-3, .hex-6, .hex-9 {
+  transition: transform 1500ms ease-in 800ms, opacity 1500ms ease-in-out 800ms;
+}
+
+.hex-4, .hex-13, .hex-8 {
+  transition: transform 1500ms ease-in 1100ms, opacity 1500ms ease-in-out 1100ms;
+}
+
+.hex-5, .hex-11, .hex-14 {
+  transition: transform 1500ms ease-in 1400ms, opacity 1500ms ease-in-out 1400ms;
+}
+
+
+.move {
+  transform: translate(0px, 250px);
+  opacity: 1;
+}
