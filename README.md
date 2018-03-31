@@ -8,7 +8,7 @@ Online portfolio to showcase my work in full-stack JavaScript development.
 * CSS3
 * [CSS Skeleton](http://getskeleton.com/)
 * jQuery
-* [Waypoints.js] (http://imakewebthings.com/waypoints/) - Used for on-scroll animations
+* [Waypoints.js](http://imakewebthings.com/waypoints/) - Used for on-scroll animations
 
 ## Authors
 Built and Designed by Hillary Scofield (me!)
