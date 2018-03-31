@@ -18,7 +18,14 @@ skills.waypoint(function() {
 //On page scroll to about me section, slide in the section content
 var about = $(".personal-info");
 about.waypoint(function() {
-  $(".about-content").addClass('slide-in');
+  $(".about-content").addClass('move-2');
+  console.log("waypoint");
+}, {offset: '70%'});
+
+//On page scroll to projects section, drop in projects
+var projects = $(".projects");
+projects.waypoint(function() {
+  $(".project-div").addClass('move-2');
   console.log("waypoint");
 }, {offset: '70%'});
 
