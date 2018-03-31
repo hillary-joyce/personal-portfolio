@@ -8,24 +8,24 @@
 }
 
 .about-me {
-    height: 100vh;
+    height: 80vh;
     background-image: url("../images/watercolor-2.png");
     background-size: 80vh;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
 }
 
 .personal-info {
   width: 50vw;
   padding-left: 15%;
   font-size: 1.5em;
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 .skills {
   height: 80vh;
   text-align: right;
-  background-image: url("../images/watercolor-4.png");
+  background-image: url("../images/watercolor-3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 10%;
@@ -40,8 +40,8 @@
 
 .projects {
   height: 100vh;
-  background-image: url("../images/watercolor-3.png");
-  background-size: 65vh;
+  background-image: url("../images/watercolor-4.png");
+  background-size: 50vh;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -104,9 +104,24 @@
 }
 
 /********************************** ABOUT *************************************/
-.personal-info h2 {
-  display: none;
+.about-content {
+  opacity: 0;
 }
+
+.personal-info h2 {
+  transition: transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms, opacity 1000ms ease-out 300ms;
+}
+
+.personal-info p {
+  transition: transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 400ms, opacity 1000ms ease-out 400ms;
+}
+
+.slide-in {
+  transform: translate(70px, 0px);
+  opacity: 1;
+}
+
+
 /*************** SKILLS DIV ****************/
 .hex-skills {
   height: 150px;
@@ -128,4 +143,117 @@
 
 .skills-2 {
   margin-top:-40px;
+}
+
+/**************************** PROJECTS DIV ************************************/
+.project-info {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: 90px 200px 200px;
+}
+
+.project-div {
+  border: 2px solid black;
+  border-radius: 2px;
+  position: relative;
+}
+
+.project-header {
+  grid-column: span 3;
+}
+
+.project-div span {
+  position: absolute;
+  font-size: 4em;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project-div span:hover {
+  opacity: 0;
+}
+
+/**************************** PROJECT DIV MODALS *****************************/
+.project-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.project-details {
+  width: 70%;
+  margin: 10px auto;
+  background: white;
+  border-radius: 2px;
+  padding: 30px;
+  background-image: url("../images/watercolor-1.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: right bottom;
+}
+
+.project-details p, .project-details li, .project-details a {
+  font-size: 1.25em;
+}
+
+.project-sections {
+  font-size: 1.4em;
+  color: #44bab0;
+}
+.close {
+  display: block;
+}
+/********************** INDIVIDUAL PROJECT DIV STYLING ************************/
+.hiking:hover {
+  background-image: url('../images/hiking-trail-finder.gif');
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.spiffy:hover {
+  background-image: url('../images/spiffy-plus.gif');
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.dogs {
+  grid-column: 1/span 1;
+}
+
+.dogs:hover {
+  background-image: url('../images/dog-friend-finder.gif');
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.wedding:hover {
+  background-image: url("../images/andre-hunter-263233-unsplash.jpg");
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+/*****************************  CONTACT DIV **********************************/
+.contact {
+  width: 80%;
+  text-align: right;
 }
