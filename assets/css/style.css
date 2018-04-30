@@ -259,14 +259,28 @@ html, body {
   }
 
   .projects{
-    height: 90vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../images/watercolor-4.png);
-    background-size: 34vh;
-    background-position: 230px;
+    height: auto;
+    background-image: none;
   }
 
   .project-info {
     width: 90%;
+    display: block;
+  }
+
+  .project-div {
+    padding-bottom: 30px;
+  }
+
+  .project-gif {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    width: 95%;
+    text-align: left;
+    margin: 30px auto;
   }
 
   .move {
