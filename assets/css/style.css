@@ -142,9 +142,12 @@ html, body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 40px;
+  grid-gap: 60px;
 }
 
+.project-info p {
+  margin-bottom: 2rem;
+}
 .project-div {
   color: Black;
 }
