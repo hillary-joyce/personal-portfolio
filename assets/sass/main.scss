@@ -1,0 +1,79 @@
+@import "partials/reset";
+@import "partials/colors";
+@import "partials/fonts";
+
+body {
+  font-family: $raleway;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5 .header {
+  font-family: $playfair;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  padding: 80vh 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px)scale(2);
+}
+
+.main-menu {
+  height: 30px;
+  background: $taupe;
+  color: $white;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+.main-menu span {
+  padding-top: 5px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.header {
+  width: 50vw;
+  height: 55vh;
+  background: $light-grey;
+  position: absolute;
+  transform: translate(40%, -100%);
+}
+
+.title {
+  width: 50vw;
+  height: 55vh;
+  color: $yankees-blue;
+  border: 3px solid $yankees-blue;
+  position: absolute;
+  transform: translate(42%, -131%);
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 7.5rem;
+  padding-top: 5vh;
+  padding-bottom: 1.5vh;
+}
+
+.title h2 {
+  font-size: 1.75rem;
+}
