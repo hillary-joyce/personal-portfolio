@@ -43,35 +43,41 @@ body {
   overflow-x: hidden;
   overflow-y: scroll; }
 
-h1, h2, h3, h4, h5 .header {
-  font-family: "Playfair Display", serif; }
-
 .parallax {
   perspective: 1px;
-  height: 80vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto; }
 
 .parallax__layer {
   position: absolute;
-  padding: 80vh 0;
+  padding: 100vh 0;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0; }
 
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
 .parallax__layer--base {
-  transform: translateZ(0); }
+  transform: translateZ(-1px) scale(2); }
 
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(2); }
+  transform: translateZ(-3px) scale(4); }
+
+.parallax__layer--mid {
+  transform: translateZ(-2px) scale(3); }
 
 .main-menu {
   height: 30px;
-  background: #B3A394;
-  color: #FFFFFF;
-  font-size: 1.25rem;
-  text-align: right; }
+  color: #606361;
+  font-size: 1.5rem;
+  text-align: right;
+  background: none; }
 
 .main-menu span {
   padding-top: 5px;
@@ -79,27 +85,64 @@ h1, h2, h3, h4, h5 .header {
   display: inline-block; }
 
 .header {
-  width: 50vw;
-  height: 55vh;
-  background: #CDD7D6;
   position: absolute;
-  transform: translate(40%, -100%); }
+  transform: translate(30%, -125%);
+  width: 65vw;
+  height: 30vh;
+  background: #C9DED7;
+  border-radius: 8px; }
 
 .title {
-  width: 50vw;
-  height: 55vh;
-  color: #102542;
-  border: 3px solid #102542;
   position: absolute;
-  transform: translate(42%, -131%);
+  transform: translate(31%, -155%);
+  width: 65vw;
+  height: 30vh;
+  border: 2px solid black;
+  border-radius: 8px;
   text-align: center; }
 
 .title h1 {
-  font-size: 7.5rem;
+  font-size: 6.5rem;
   padding-top: 5vh;
   padding-bottom: 1.5vh; }
 
 .title h2 {
   font-size: 1.75rem; }
+
+.about-me {
+  position: absolute;
+  transform: translate(45%, 20%);
+  background: #EFD7CB;
+  width: 25vw;
+  height: 10vh;
+  border-radius: 8px; }
+
+.photo-bg {
+  position: absolute;
+  transform: translate(255%, 20%);
+  background: #BCC4DB;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; }
+
+.about-img {
+  position: absolute;
+  transform: translate(408%, 108%); }
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%; }
+
+.about-header {
+  font-size: 3.5rem;
+  position: absolute;
+  transform: translate(68%, 245%); }
+
+.personal-info {
+  width: 40vw;
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(32%, 100%); }
 
 /*# sourceMappingURL=style.css.map */
