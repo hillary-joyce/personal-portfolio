@@ -8,32 +8,40 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -41,73 +49,22 @@ body {
   transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll; }
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto; }
-
-.parallax__layer {
-  position: absolute;
-  padding: 100vh 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.parallax-group {
-  position: relative;
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-
-.parallax__layer--base {
-  transform: translateZ(-1px) scale(2); }
-
-.parallax__layer--back {
-  transform: translateZ(-3px) scale(4); }
-
-.parallax__layer--mid {
-  transform: translateZ(-2px) scale(3); }
+  overflow-y: scroll;
+}
 
 .main-menu {
   height: 30px;
   color: #606361;
   font-size: 1.5rem;
   text-align: right;
-  background: none; }
+  background: none;
+}
 
 .main-menu span {
   padding-top: 5px;
   padding-right: 10px;
-  display: inline-block; }
-
-.header {
-  position: absolute;
-  transform: translate(30%, -125%);
-  width: 65vw;
-  height: 30vh;
-  background: #C9DED7;
-  border-radius: 8px; }
-
-.title {
-  position: absolute;
-  transform: translate(31%, -155%);
-  width: 65vw;
-  height: 30vh;
-  border: 2px solid black;
-  border-radius: 8px;
-  text-align: center; }
-
-.title h1 {
-  font-size: 6.5rem;
-  padding-top: 5vh;
-  padding-bottom: 1.5vh; }
-
-.title h2 {
-  font-size: 1.75rem; }
+  display: inline-block;
+}
 
 .about-me {
   position: absolute;
@@ -115,7 +72,8 @@ body {
   background: #EFD7CB;
   width: 25vw;
   height: 10vh;
-  border-radius: 8px; }
+  border-radius: 8px;
+}
 
 .photo-bg {
   position: absolute;
@@ -123,26 +81,31 @@ body {
   background: #BCC4DB;
   width: 300px;
   height: 300px;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .about-img {
   position: absolute;
-  transform: translate(408%, 108%); }
+  transform: translate(408%, 108%);
+}
 
 .profile-pic {
   height: 200px;
   width: 200px;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .about-header {
   font-size: 3.5rem;
   position: absolute;
-  transform: translate(68%, 245%); }
+  transform: translate(68%, 245%);
+}
 
 .personal-info {
   width: 40vw;
   font-size: 1.5rem;
   position: absolute;
-  transform: translate(32%, 100%); }
+  transform: translate(32%, 100%);
+}
 
 /*# sourceMappingURL=style.css.map */
