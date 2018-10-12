@@ -44,12 +44,45 @@ table {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-3px) scale(4);
+}
+
+.parallax__layer--mid {
+  transform: translateZ(-2px) scale(3);
 }
 
 .main-menu {
@@ -64,6 +97,35 @@ body {
   padding-top: 5px;
   padding-right: 10px;
   display: inline-block;
+}
+
+.header {
+  position: absolute;
+  transform: translate(0vw, 0vh);
+  width: 100vw;
+  height: 60vh;
+  background: #C9DED7;
+  border-radius: 8px;
+}
+
+.title {
+  position: absolute;
+  transform: translate(9vw, 10vh);
+  width: 85vw;
+  height: 49vh;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 8rem;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.title h2 {
+  font-size: 2.5rem;
 }
 
 .about-me {

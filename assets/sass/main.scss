@@ -4,7 +4,7 @@
 @import "partials/mixins";
 
 body {
-  font-family: $raleway;
+  // font-family: $raleway;
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100vh;
@@ -13,39 +13,40 @@ body {
 }
 
 
-// //Overall parallax styling
-// .parallax {
-//   perspective: 1px;
-//   height: 100vh;
-//   overflow-x: hidden;
-//   overflow-y: auto;
-// }
-// .parallax__layer {
-//   position: absolute;
-//   padding: 100vh 0;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-// }
-//
-// .parallax-group {
-//   position: relative;
-//   height: 100vh;
-//   -webkit-transform-style: preserve-3d;
-//   transform-style: preserve-3d;
-// }
-// .parallax__layer--base {
-//   transform: translateZ(-1px)scale(2);
-// }
-// .parallax__layer--back {
-//   transform: translateZ(-3px)scale(4);
-// }
-//
-// .parallax__layer--mid {
-//   transform: translateZ(-2px)scale(3);
-// }
-//
+//Overall parallax styling
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(-1px)scale(2);
+}
+.parallax__layer--back {
+  transform: translateZ(-3px)scale(4);
+}
+
+.parallax__layer--mid {
+  transform: translateZ(-2px)scale(3);
+}
+
 // //////////////////   Main Menu   /////////////////////
 .main-menu {
   height: 30px;
@@ -63,32 +64,32 @@ body {
 
 
 /////////////////  Header  /////////////////////
-// .header {
-//   @include parallax-positioning(30%, -125%);
-//   width: 65vw;
-//   height: 30vh;
-//   background: $mint;
-//   border-radius: 8px;
-// }
-//
-// .title {
-//   @include parallax-positioning(31%, -155%);
-//   width: 65vw;
-//   height: 30vh;
-//   border: 2px solid black;
-//   border-radius: 8px;
-//   text-align: center;
-// }
-//
-// .title h1 {
-//   font-size: 6.5rem;
-//   padding-top: 5vh;
-//   padding-bottom: 1.5vh;
-// }
-//
-// .title h2 {
-//   font-size: 1.75rem;
-// }
+.header {
+  @include parallax-positioning(0vw, 0vh);
+  width: 100vw;
+  height: 60vh;
+  background: $mint;
+  border-radius: 8px;
+}
+
+.title {
+  @include parallax-positioning(9vw, 10vh);
+  width: 85vw;
+  height: 49vh;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 8rem;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+}
 
 //////////////////    About   ///////////////////////
 .about-me {
