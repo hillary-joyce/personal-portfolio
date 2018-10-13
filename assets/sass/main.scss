@@ -93,39 +93,34 @@ body {
 
 //////////////////    About   ///////////////////////
 .about-me {
-  @include parallax-positioning(45%, 20%);
+  @include parallax-positioning(-10vw, 100vh);
   background: $parrot-pink;
-  width: 25vw;
-  height: 10vh;
+  width: 35vw;
+  height: 20vh;
   border-radius: 8px;
 }
 
 .photo-bg {
-  @include parallax-positioning(255%, 20%);
+  @include parallax-positioning(75vw, 132vh);
   background: $light-steel-blue;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 30vw;
+  height: 55vh;
+  border-radius: 8px;
 }
 
 .about-img {
-  @include parallax-positioning(408%, 108%);
-}
-
-.profile-pic {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-
+  @include parallax-positioning(70vw, 202vh);
+  width: 25vw;
+  border-radius: 8px;
 }
 
 .about-header {
   font-size: 3.5rem;
-  @include parallax-positioning(68%, 245%);
+  @include parallax-positioning(0vw, 200vh);
 }
 
 .personal-info {
-  width: 40vw;
-  font-size: 1.5rem;
-  @include parallax-positioning(32%, 100%)
+  width: 50vw;
+  font-size: 2rem;
+  @include parallax-positioning(1vw, 222vh)
 }

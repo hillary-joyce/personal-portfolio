@@ -130,44 +130,40 @@ body {
 
 .about-me {
   position: absolute;
-  transform: translate(45%, 20%);
+  transform: translate(-10vw, 100vh);
   background: #EFD7CB;
-  width: 25vw;
-  height: 10vh;
+  width: 35vw;
+  height: 20vh;
   border-radius: 8px;
 }
 
 .photo-bg {
   position: absolute;
-  transform: translate(255%, 20%);
+  transform: translate(75vw, 132vh);
   background: #BCC4DB;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 30vw;
+  height: 55vh;
+  border-radius: 8px;
 }
 
 .about-img {
   position: absolute;
-  transform: translate(408%, 108%);
-}
-
-.profile-pic {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+  transform: translate(70vw, 202vh);
+  width: 25vw;
+  border-radius: 8px;
 }
 
 .about-header {
   font-size: 3.5rem;
   position: absolute;
-  transform: translate(68%, 245%);
+  transform: translate(0vw, 200vh);
 }
 
 .personal-info {
-  width: 40vw;
-  font-size: 1.5rem;
+  width: 50vw;
+  font-size: 2rem;
   position: absolute;
-  transform: translate(32%, 100%);
+  transform: translate(1vw, 222vh);
 }
 
 /*# sourceMappingURL=style.css.map */
