@@ -154,8 +154,20 @@ body {
 
 .skills-bg-2 {
   @include parallax-positioning(-14vw, 182vh);
-  width: 38vw;
+  width: 35vw;
   height: 14vh;
   background: $mint;
   border-radius: 8px;
+}
+
+///////////////// Projects //////////////////////////
+.project-header {
+  @include parallax-positioning(92vw, 370vh);
+  font-size: 4rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @include parallax-positioning(0vw, 300vh);
 }
