@@ -166,4 +166,41 @@ body {
   transform: translate(1vw, 222vh);
 }
 
+.skills-header {
+  position: absolute;
+  transform: translate(-9vw, 230vh);
+  font-size: 4rem;
+}
+
+.skills-grid {
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  transform: translate(15vw, 290vh);
+}
+
+.skills-grid div {
+  text-align: center;
+  padding: 40px;
+}
+
+.skills-bg-1 {
+  position: absolute;
+  transform: translate(79vw, 193vh);
+  width: 12vw;
+  height: 82vh;
+  background: #EFD7CB;
+  border-radius: 8px;
+}
+
+.skills-bg-2 {
+  position: absolute;
+  transform: translate(-14vw, 182vh);
+  width: 38vw;
+  height: 14vh;
+  background: #C9DED7;
+  border-radius: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

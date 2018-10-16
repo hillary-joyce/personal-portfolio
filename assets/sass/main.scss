@@ -124,3 +124,38 @@ body {
   font-size: 2rem;
   @include parallax-positioning(1vw, 222vh)
 }
+
+
+/////////////////// Skills ///////////////////////////
+.skills-header {
+  @include parallax-positioning(-9vw, 230vh);
+  font-size: 4rem;
+}
+
+.skills-grid {
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include parallax-positioning(15vw, 290vh);
+}
+
+.skills-grid div {
+  text-align: center;
+  padding: 40px;
+}
+
+.skills-bg-1 {
+  @include parallax-positioning(79vw, 193vh);
+  width: 12vw;
+  height: 82vh;
+  background: $parrot-pink;
+  border-radius: 8px;
+}
+
+.skills-bg-2 {
+  @include parallax-positioning(-14vw, 182vh);
+  width: 38vw;
+  height: 14vh;
+  background: $mint;
+  border-radius: 8px;
+}
