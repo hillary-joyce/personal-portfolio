@@ -15,7 +15,7 @@ body {
 
 //Overall parallax styling
 .parallax {
-  perspective: 1px;
+  perspective: 300px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -65,17 +65,17 @@ body {
 
 /////////////////  Header  /////////////////////
 .header {
-  @include parallax-positioning(0vw, 0vh);
-  width: 100vw;
-  height: 60vh;
+  @include parallax-positioning(12vw, 12vh);
+  width: 75vw;
+  height: 50vh;
   background: $mint;
   border-radius: 8px;
 }
 
 .title {
-  @include parallax-positioning(9vw, 10vh);
-  width: 85vw;
-  height: 49vh;
+  @include parallax-positioning(14vw, 14vh);
+  width: 75vw;
+  height: 50vh;
   border: 2px solid black;
   border-radius: 8px;
   text-align: center;
@@ -93,36 +93,36 @@ body {
 
 //////////////////    About   ///////////////////////
 .about-me {
-  @include parallax-positioning(-10vw, 100vh);
+  @include parallax-positioning(9vw, 75vh);
   background: $parrot-pink;
-  width: 35vw;
-  height: 20vh;
+  width: 25vw;
+  height: 18vh;
   border-radius: 8px;
 }
 
 .photo-bg {
-  @include parallax-positioning(75vw, 132vh);
+  @include parallax-positioning(63vw, 100vh);
   background: $light-steel-blue;
-  width: 30vw;
-  height: 55vh;
+  width: 20vw;
+  height: 48vh;
   border-radius: 8px;
 }
 
 .about-img {
-  @include parallax-positioning(70vw, 202vh);
-  width: 25vw;
+  @include parallax-positioning(60vw, 142vh);
+  width: 20vw;
   border-radius: 8px;
 }
 
 .about-header {
   font-size: 3.5rem;
-  @include parallax-positioning(0vw, 200vh);
+  @include parallax-positioning(11vw, 135vh);
 }
 
 .personal-info {
-  width: 50vw;
-  font-size: 2rem;
-  @include parallax-positioning(1vw, 222vh)
+  width: 35vw;
+  font-size: 1.5rem;
+  @include parallax-positioning(13vw, 153vh)
 }
 
 
@@ -154,8 +154,8 @@ body {
 
 .skills-bg-2 {
   @include parallax-positioning(-14vw, 182vh);
-  width: 35vw;
-  height: 14vh;
+  width: 100vw;
+  height: 100vh;
   background: $mint;
   border-radius: 8px;
 }
@@ -169,5 +169,5 @@ body {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  @include parallax-positioning(0vw, 300vh);
+  @include parallax-positioning(0vw, 400vh);
 }

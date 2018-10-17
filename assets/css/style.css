@@ -52,7 +52,7 @@ body {
 }
 
 .parallax {
-  perspective: 1px;
+  perspective: 300px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -101,18 +101,18 @@ body {
 
 .header {
   position: absolute;
-  transform: translate(0vw, 0vh);
-  width: 100vw;
-  height: 60vh;
+  transform: translate(12vw, 12vh);
+  width: 75vw;
+  height: 50vh;
   background: #C9DED7;
   border-radius: 8px;
 }
 
 .title {
   position: absolute;
-  transform: translate(9vw, 10vh);
-  width: 85vw;
-  height: 49vh;
+  transform: translate(14vw, 14vh);
+  width: 75vw;
+  height: 50vh;
   border: 2px solid black;
   border-radius: 8px;
   text-align: center;
@@ -130,40 +130,40 @@ body {
 
 .about-me {
   position: absolute;
-  transform: translate(-10vw, 100vh);
+  transform: translate(9vw, 75vh);
   background: #EFD7CB;
-  width: 35vw;
-  height: 20vh;
+  width: 25vw;
+  height: 18vh;
   border-radius: 8px;
 }
 
 .photo-bg {
   position: absolute;
-  transform: translate(75vw, 132vh);
+  transform: translate(63vw, 100vh);
   background: #BCC4DB;
-  width: 30vw;
-  height: 55vh;
+  width: 20vw;
+  height: 48vh;
   border-radius: 8px;
 }
 
 .about-img {
   position: absolute;
-  transform: translate(70vw, 202vh);
-  width: 25vw;
+  transform: translate(60vw, 142vh);
+  width: 20vw;
   border-radius: 8px;
 }
 
 .about-header {
   font-size: 3.5rem;
   position: absolute;
-  transform: translate(0vw, 200vh);
+  transform: translate(11vw, 135vh);
 }
 
 .personal-info {
-  width: 50vw;
-  font-size: 2rem;
+  width: 35vw;
+  font-size: 1.5rem;
   position: absolute;
-  transform: translate(1vw, 222vh);
+  transform: translate(13vw, 153vh);
 }
 
 .skills-header {
@@ -197,8 +197,8 @@ body {
 .skills-bg-2 {
   position: absolute;
   transform: translate(-14vw, 182vh);
-  width: 35vw;
-  height: 14vh;
+  width: 100vw;
+  height: 100vh;
   background: #C9DED7;
   border-radius: 8px;
 }
@@ -213,7 +213,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   position: absolute;
-  transform: translate(0vw, 300vh);
+  transform: translate(0vw, 400vh);
 }
 
 /*# sourceMappingURL=style.css.map */
