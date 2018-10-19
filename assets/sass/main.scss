@@ -10,6 +10,8 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  color: $dark-blue-grey;
+  background: $white;
 }
 
 
@@ -47,20 +49,6 @@ body {
   transform: translateZ(-2px)scale(3);
 }
 
-// //////////////////   Main Menu   /////////////////////
-.main-menu {
-  height: 30px;
-  color: $granite-grey;
-  font-size: 1.5rem;
-  text-align: right;
-  background: none;
-}
-
-.main-menu span {
-  padding-top: 5px;
-  padding-right: 10px;
-  display: inline-block;
-}
 
 
 /////////////////  Header  /////////////////////
@@ -68,16 +56,16 @@ body {
   @include parallax-positioning(12vw, 12vh);
   width: 75vw;
   height: 50vh;
-  background: $mint;
-  border-radius: 8px;
+  background: $vivid-tangerine;
+  border-radius: 3px;
 }
 
 .title {
   @include parallax-positioning(14vw, 14vh);
   width: 75vw;
   height: 50vh;
-  border: 2px solid black;
-  border-radius: 8px;
+  border: 2px solid $dark-blue-grey;
+  border-radius: 3px;
   text-align: center;
 }
 
@@ -94,24 +82,24 @@ body {
 //////////////////    About   ///////////////////////
 .about-me {
   @include parallax-positioning(9vw, 75vh);
-  background: $parrot-pink;
-  width: 25vw;
-  height: 18vh;
-  border-radius: 8px;
+  background: $pastel-blue;
+  width: 40vw;
+  height: 12vh;
+  border-radius: 3px;
 }
 
 .photo-bg {
-  @include parallax-positioning(63vw, 100vh);
-  background: $light-steel-blue;
-  width: 22vw;
-  height: 40vh;
-  border-radius: 8px;
+  @include parallax-positioning(70vw, 92vh);
+  background: $bittersweet;
+  width: 15vw;
+  height: 55vh;
+  border-radius: 3px;
 }
 
 .about-img {
-  @include parallax-positioning(60vw, 142vh);
-  width: 20vw;
-  border-radius: 8px;
+  @include parallax-positioning(63vw, 140vh);
+  width: 17vw;
+  border-radius: 3px;
 }
 
 .about-header {
@@ -128,28 +116,30 @@ body {
 
 /////////////////// Skills ///////////////////////////
 .skills-header {
-  @include parallax-positioning(6vw, 160vh);
+  @include parallax-positioning(6vw, 167vh);
   font-size: 4rem;
+  color: $pastel-blue;
 }
 
 .skills-grid {
   font-size: 2.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  @include parallax-positioning(17vw, 170vh);
+  @include parallax-positioning(17vw, 177vh);
+  color: $pastel-blue;
 }
 
 .skills-grid div {
   text-align: center;
-  padding: 35px;
+  padding: 33px;
 }
 
 .skills-bg-2 {
-  @include parallax-positioning(0vw, 155vh);
+  @include parallax-positioning(0vw, 160vh);
   width: 100vw;
   height: 80vh;
-  background: $mint;
-  border-radius: 8px;
+  background: $dark-blue-grey;
+  border-radius: 3px;
 }
 
 ///////////////// Projects //////////////////////////
@@ -167,11 +157,12 @@ body {
 }
 
 .project-div {
-  background: $parrot-pink;
-  border-radius: 8px;
+  background: $vivid-tangerine;
+  border-radius: 3px;
   text-align: center;
   font-size: 1.25rem;
-  padding: 40px 15px;
+  padding: 40px 13px;
+  color: white;
 }
 
 .project-title, .project-description, .project-role, .project-responsibilities {
