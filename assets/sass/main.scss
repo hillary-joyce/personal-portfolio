@@ -103,8 +103,8 @@ body {
 .photo-bg {
   @include parallax-positioning(63vw, 100vh);
   background: $light-steel-blue;
-  width: 20vw;
-  height: 48vh;
+  width: 22vw;
+  height: 40vh;
   border-radius: 8px;
 }
 
@@ -128,46 +128,68 @@ body {
 
 /////////////////// Skills ///////////////////////////
 .skills-header {
-  @include parallax-positioning(-9vw, 230vh);
+  @include parallax-positioning(6vw, 160vh);
   font-size: 4rem;
 }
 
 .skills-grid {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @include parallax-positioning(15vw, 290vh);
+  grid-template-columns: repeat(4, 1fr);
+  @include parallax-positioning(17vw, 170vh);
 }
 
 .skills-grid div {
   text-align: center;
-  padding: 40px;
-}
-
-.skills-bg-1 {
-  @include parallax-positioning(79vw, 193vh);
-  width: 12vw;
-  height: 82vh;
-  background: $parrot-pink;
-  border-radius: 8px;
+  padding: 35px;
 }
 
 .skills-bg-2 {
-  @include parallax-positioning(-14vw, 182vh);
+  @include parallax-positioning(0vw, 155vh);
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background: $mint;
   border-radius: 8px;
 }
 
 ///////////////// Projects //////////////////////////
 .project-header {
-  @include parallax-positioning(92vw, 370vh);
+  @include parallax-positioning(75vw, 130vh);
   font-size: 4rem;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  @include parallax-positioning(0vw, 400vh);
+  grid-gap: 20px;
+  @include parallax-positioning(3vw, 215vh);
+  width: 94vw;
+}
+
+.project-div {
+  background: $parrot-pink;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 40px 15px;
+}
+
+.project-title, .project-description, .project-role, .project-responsibilities {
+  padding-bottom: 20px;
+}
+
+.project-div .project-title {
+  font-size: 2rem;
+}
+
+//////////////////////// Contact //////////////////////////////
+.contact-info {
+  text-align: center;
+  @include parallax-positioning(10vw, 185vh);
+  font-size: 1.75rem;
+}
+
+.contact-info h2 {
+  font-size: 4rem;
+  @include parallax-positioning(0vw, -18vh);
 }

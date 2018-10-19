@@ -141,8 +141,8 @@ body {
   position: absolute;
   transform: translate(63vw, 100vh);
   background: #BCC4DB;
-  width: 20vw;
-  height: 48vh;
+  width: 22vw;
+  height: 40vh;
   border-radius: 8px;
 }
 
@@ -168,52 +168,74 @@ body {
 
 .skills-header {
   position: absolute;
-  transform: translate(-9vw, 230vh);
+  transform: translate(6vw, 160vh);
   font-size: 4rem;
 }
 
 .skills-grid {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   position: absolute;
-  transform: translate(15vw, 290vh);
+  transform: translate(17vw, 170vh);
 }
 
 .skills-grid div {
   text-align: center;
-  padding: 40px;
-}
-
-.skills-bg-1 {
-  position: absolute;
-  transform: translate(79vw, 193vh);
-  width: 12vw;
-  height: 82vh;
-  background: #EFD7CB;
-  border-radius: 8px;
+  padding: 35px;
 }
 
 .skills-bg-2 {
   position: absolute;
-  transform: translate(-14vw, 182vh);
+  transform: translate(0vw, 155vh);
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background: #C9DED7;
   border-radius: 8px;
 }
 
 .project-header {
   position: absolute;
-  transform: translate(92vw, 370vh);
+  transform: translate(75vw, 130vh);
   font-size: 4rem;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   position: absolute;
-  transform: translate(0vw, 400vh);
+  transform: translate(3vw, 215vh);
+  width: 94vw;
+}
+
+.project-div {
+  background: #EFD7CB;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 40px 15px;
+}
+
+.project-title, .project-description, .project-role, .project-responsibilities {
+  padding-bottom: 20px;
+}
+
+.project-div .project-title {
+  font-size: 2rem;
+}
+
+.contact-info {
+  text-align: center;
+  position: absolute;
+  transform: translate(10vw, 185vh);
+  font-size: 1.75rem;
+}
+
+.contact-info h2 {
+  font-size: 4rem;
+  position: absolute;
+  transform: translate(0vw, -18vh);
 }
 
 /*# sourceMappingURL=style.css.map */
