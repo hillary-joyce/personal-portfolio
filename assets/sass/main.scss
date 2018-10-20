@@ -4,7 +4,7 @@
 @import "partials/mixins";
 
 body {
-  // font-family: $raleway;
+  font-family: $montserrat;
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100vh;
@@ -14,58 +14,24 @@ body {
   background: $white;
 }
 
-
-//Overall parallax styling
-.parallax {
-  perspective: 300px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+h1, h2, h3, h4 {
+  font-family: $playfair-display;
 }
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax__layer--base {
-  transform: translateZ(-1px)scale(2);
-}
-.parallax__layer--back {
-  transform: translateZ(-3px)scale(4);
-}
-
-.parallax__layer--mid {
-  transform: translateZ(-2px)scale(3);
-}
-
-
 
 /////////////////  Header  /////////////////////
 .header {
-  @include parallax-positioning(12vw, 12vh);
-  width: 75vw;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  width: 80vw;
   height: 50vh;
   background: $vivid-tangerine;
   border-radius: 3px;
 }
 
 .title {
-  @include parallax-positioning(14vw, 14vh);
   width: 75vw;
-  height: 50vh;
-  border: 2px solid $dark-blue-grey;
-  border-radius: 3px;
+  margin-top: 5vh;
+  margin-left: 2.5vw;
   text-align: center;
 }
 
@@ -77,11 +43,12 @@ body {
 
 .title h2 {
   font-size: 2.5rem;
+  padding-bottom: 5vh;
 }
 
 //////////////////    About   ///////////////////////
 .about-me {
-  @include parallax-positioning(9vw, 75vh);
+  @include margin-top-left(32vh, 12vw);
   background: $pastel-blue;
   width: 40vw;
   height: 12vh;
@@ -89,7 +56,7 @@ body {
 }
 
 .photo-bg {
-  @include parallax-positioning(70vw, 92vh);
+  @include margin-top-left(30vh, 70vw);
   background: $bittersweet;
   width: 15vw;
   height: 55vh;
@@ -97,26 +64,26 @@ body {
 }
 
 .about-img {
-  @include parallax-positioning(63vw, 140vh);
+  @include margin-top-left(40vh, 64vw);
   width: 17vw;
   border-radius: 3px;
 }
 
 .about-header {
+  @include margin-top-left(33vh, 14vw);
   font-size: 3.5rem;
-  @include parallax-positioning(11vw, 135vh);
 }
 
 .personal-info {
-  width: 35vw;
+  @include margin-top-left(47vh, 16vw);
+  width: 40vw;
   font-size: 1.5rem;
-  @include parallax-positioning(13vw, 153vh)
+  position: absolute;
 }
-
 
 /////////////////// Skills ///////////////////////////
 .skills-header {
-  @include parallax-positioning(6vw, 167vh);
+  @include margin-top-left(115vh, 5vw);
   font-size: 4rem;
   color: $pastel-blue;
 }
@@ -125,7 +92,7 @@ body {
   font-size: 2.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  @include parallax-positioning(17vw, 177vh);
+  @include margin-top-left(126vh, 15vw);
   color: $pastel-blue;
 }
 
@@ -135,52 +102,9 @@ body {
 }
 
 .skills-bg-2 {
-  @include parallax-positioning(0vw, 160vh);
+  @include margin-top-left(110vh, 0vw);
   width: 100vw;
   height: 80vh;
   background: $dark-blue-grey;
   border-radius: 3px;
-}
-
-///////////////// Projects //////////////////////////
-.project-header {
-  @include parallax-positioning(75vw, 130vh);
-  font-size: 4rem;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  @include parallax-positioning(3vw, 215vh);
-  width: 94vw;
-}
-
-.project-div {
-  background: $vivid-tangerine;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 1.25rem;
-  padding: 40px 13px;
-  color: white;
-}
-
-.project-title, .project-description, .project-role, .project-responsibilities {
-  padding-bottom: 20px;
-}
-
-.project-div .project-title {
-  font-size: 2rem;
-}
-
-//////////////////////// Contact //////////////////////////////
-.contact-info {
-  text-align: center;
-  @include parallax-positioning(10vw, 185vh);
-  font-size: 1.75rem;
-}
-
-.contact-info h2 {
-  font-size: 4rem;
-  @include parallax-positioning(0vw, -18vh);
 }

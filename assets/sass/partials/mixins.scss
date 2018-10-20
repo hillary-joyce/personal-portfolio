@@ -1,5 +1,6 @@
 
-@mixin parallax-positioning($leftRight, $topBottom){
+@mixin margin-top-left($top, $left){
+  margin-top: $top;
+  margin-left: $left;
   position: absolute;
-  transform: translate($leftRight, $topBottom);
 }
