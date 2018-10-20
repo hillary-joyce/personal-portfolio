@@ -83,7 +83,7 @@ h1, h2, h3, h4 {
 
 /////////////////// Skills ///////////////////////////
 .skills-header {
-  @include margin-top-left(115vh, 5vw);
+  @include margin-top-left(115vh, 10vw);
   font-size: 4rem;
   color: $pastel-blue;
 }
@@ -107,4 +107,59 @@ h1, h2, h3, h4 {
   height: 80vh;
   background: $dark-blue-grey;
   border-radius: 3px;
+}
+
+// ///////////////// Projects //////////////////////////
+.project-header {
+  @include margin-top-left(200vh, 80vw);
+  font-size: 4rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  @include margin-top-left(223vh, 4vw);
+  width: 94vw;
+}
+
+.project-div {
+  background: $vivid-tangerine;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 40px 13px;
+  color: white;
+}
+
+.project-div a {
+  text-decoration: none;
+  color: $dark-blue-grey;
+  position: relative;
+}
+
+.project-title, .project-description, .project-role, .project-responsibilities {
+  padding-bottom: 20px;
+}
+
+.project-div .project-title {
+  font-size: 2rem;
+}
+
+//////////////////////// Contact //////////////////////////////
+.contact-info {
+  text-align: center;
+  @include margin-top-left(315vh, 5vw);
+  font-size: 1.5rem;
+  margin-bottom: 10vh;
+}
+
+.contact-info p {
+  width: 80vw;
+  margin-left: 5vw;
+}
+
+.contact-info h2 {
+  font-size: 4rem;
+  @include margin-top-left(-15vh, 0vw);
 }
