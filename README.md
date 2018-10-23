@@ -1,7 +1,7 @@
 # Portfolio
 Portfolio to showcase my web development work. 
 
-[Check out my portfolio](https://hillary-joyce.github.io/personal-portfolio/)
+[Check out my portfolio](https://hillary-joyce.github.io/portfolio/)
 
 ## Technologies Used
 * HTML5
