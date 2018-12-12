@@ -3,163 +3,200 @@
 @import "partials/fonts";
 @import "partials/mixins";
 
-body {
-  font-family: $montserrat;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  color: $dark-blue-grey;
-  background: $white;
+body, h1, h2, h3, p {
+  font-family: $poppins;
+  font-weight: 200;
+  color: $smoky-black;
 }
 
-h1, h2, h3, h4 {
-  font-family: $playfair-display;
-}
-
-/////////////////  Header  /////////////////////
 .header {
-  margin-top: 10vh;
-  margin-left: 10vw;
-  width: 80vw;
-  height: 50vh;
-  background: $vivid-tangerine;
-  border-radius: 3px;
-}
-
-.title {
-  width: 75vw;
-  margin-top: 5vh;
-  margin-left: 2.5vw;
+  height: 200vh;
+  width: 100vw;
+  margin: 0 auto;
   text-align: center;
+  position: fixed;
+  background: $carmine-pink;
+}
+.header h1 {
+  position: relative;
+  color: $isabelline;
+  font-size: 110px;
+  font-weight: 800;
+  margin-top: 100px;
+  opacity: 0;
+  animation: slide 1.3s .2s cubic-bezier(0, 0, 0.38, 0.88) forwards;
+
 }
 
-.title h1 {
-  font-size: 8rem;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+.header h2 {
+  position: relative;
+  color: $isabelline;
+  font-size: 50px;
+  margin-left: 375px;
+  opacity: 0;
+  animation: fade-in 1s 1.5s cubic-bezier(0, 0, 0.38, 0.88) forwards;
+  letter-spacing: .6rem;
 }
 
-.title h2 {
-  font-size: 2.5rem;
-  padding-bottom: 5vh;
+.main-container {
+  position: absolute;
+  width: 100%;
+  margin-top: 80vh;
+  background: $isabelline;
+  z-index: 1;
 }
 
-//////////////////    About   ///////////////////////
-.about-me {
-  @include margin-top-left(32vh, 12vw);
-  background: $pastel-blue;
-  width: 40vw;
-  height: 12vh;
-  border-radius: 3px;
-}
-
-.photo-bg {
-  @include margin-top-left(30vh, 70vw);
-  background: $bittersweet;
-  width: 15vw;
-  height: 55vh;
-  border-radius: 3px;
+.about-me{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .about-img {
-  @include margin-top-left(40vh, 64vw);
-  width: 17vw;
-  border-radius: 3px;
+  height: 500px;
+  margin-top: 100px;
 }
-
 .about-header {
-  @include margin-top-left(33vh, 14vw);
-  font-size: 3.5rem;
+  font-size: 50px;
+  display: block;
+  width: 240px;
+  font-weight: 800;
+  margin: 100px 0px 40px 10vw;
+  border-bottom: 10px solid $middle-blue-green;
+  letter-spacing: .1rem;
 }
 
 .personal-info {
-  @include margin-top-left(47vh, 16vw);
-  width: 40vw;
-  font-size: 1.5rem;
-  position: absolute;
+  width: 50vw;
+  margin-left: 12vw;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
 }
-
-/////////////////// Skills ///////////////////////////
+.skills-div {
+  height: 600px;
+  width: 100%;
+  background-image: url("../images/crystal-bg.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
 .skills-header {
-  @include margin-top-left(115vh, 10vw);
-  font-size: 4rem;
-  color: $pastel-blue;
+  font-size: 80px;
+  padding: 20px;
+  margin-left: 40px;
+  font-weight: 800;
+  color: $isabelline;
 }
 
 .skills-grid {
-  font-size: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  @include margin-top-left(126vh, 15vw);
-  color: $pastel-blue;
-}
-
-.skills-grid div {
   text-align: center;
-  padding: 33px;
-}
-
-.skills-bg-2 {
-  @include margin-top-left(110vh, 0vw);
-  width: 100vw;
-  height: 80vh;
-  background: $dark-blue-grey;
-  border-radius: 3px;
-}
-
-// ///////////////// Projects //////////////////////////
-.project-header {
-  @include margin-top-left(200vh, 80vw);
-  font-size: 4rem;
-}
-
-.project-grid {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  @include margin-top-left(223vh, 4vw);
-  width: 94vw;
+}
+
+.skills-grid div{
+  padding: 40px 20px;
+  font-size: 40px;
+  color: $isabelline;
+  font-weight: 800;
+}
+
+.projects-div {
+  background: $isabelline;
+}
+
+.project-grid {
+  width: 70%;
+  margin: 50px auto;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
 }
 
 .project-div {
-  background: $vivid-tangerine;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 1rem;
-  padding: 40px 13px;
-  color: white;
+  background: $carmine-pink;
+  border-radius: 10px;
+  padding: 40px;
+  color: $isabelline;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.project-div ul {
+  margin-bottom: 40px;
+}
+
+.project-div li {
+  margin-top: 15px;
 }
 
 .project-div a {
-  text-decoration: none;
-  color: $dark-blue-grey;
-  position: relative;
+  color: $isabelline;
+  font-size: 24px;
+  font-weight: 800;
 }
 
-.project-title, .project-description, .project-role, .project-responsibilities {
-  padding-bottom: 20px;
+.project-title a {
+  color: $isabelline;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 36px;
 }
 
-.project-div .project-title {
-  font-size: 2rem;
+.project-title {
+  margin-bottom: 20px;
 }
 
-//////////////////////// Contact //////////////////////////////
+
+.project-header {
+  font-size: 50px;
+  display: block;
+  width: 240px;
+  font-weight: 800;
+  margin: 100px 0px 40px 70vw;
+  border-bottom: 10px solid $middle-blue-green;
+  letter-spacing: .1rem;
+}
+
+
 .contact-info {
-  text-align: center;
-  @include margin-top-left(315vh, 5vw);
-  font-size: 1.5rem;
-  margin-bottom: 10vh;
+  height: 200px;
+  font-size: 22px;
+  width: 75%;
+  margin: 40px auto;
 }
 
 .contact-info p {
-  width: 80vw;
-  margin-left: 5vw;
+  margin-bottom: 20px;
 }
 
-.contact-info h2 {
-  font-size: 4rem;
-  @include margin-top-left(-15vh, 0vw);
+.contact-info a {
+  color: $middle-blue-green;
+}
+
+.contact-header {
+  font-size: 50px;
+  display: block;
+  width: 240px;
+  font-weight: 800;
+  margin: 100px 0px 40px 0;
+  border-bottom: 10px solid $middle-blue-green;
+  letter-spacing: .1rem;
+}
+
+@keyframes slide {
+  100% {
+    margin-top: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
 }
