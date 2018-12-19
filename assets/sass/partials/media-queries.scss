@@ -1,0 +1,127 @@
+@media only screen and (max-width : 450px) {
+  @keyframes slide {
+    100% {
+      margin-top: 150px;
+      opacity: 1;
+    }
+  }
+/////// Header
+
+  .header h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  .header h2 {
+    font-size: 26px;
+    margin: 0 auto;
+  }
+
+  .main-container {
+    margin-top: 90vh;
+  }
+
+/// About me
+  .about-me {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .about-img {
+    height: 300px;
+    margin-top: 475px;
+  }
+
+  .about-header {
+    font-size: 34px;
+    width: 180px;
+    margin: 40px 0px 20px 10vw;
+  }
+
+  .personal-info {
+    width: 95%;
+    margin-left: 10vw;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+
+////// SKILLS
+  .skills-div {
+    height: auto;
+    background-position: center;
+  }
+
+  .skills-header {
+    font-size: 34px;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+
+  .skills-grid {
+    text-align: center;
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid div{
+    padding: 10px 10px;
+    font-size: 24px;
+    color: $isabelline;
+    font-weight: 800;
+  }
+
+
+//////// PROJECTS
+  .projects-div {
+    background: $isabelline;
+  }
+
+  .project-grid {
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .project-div {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .project-div a {
+    font-size: 18px;
+  }
+
+  .project-title a {
+    font-size: 20px;
+  }
+
+  .project-title {
+    margin-bottom: 20px;
+  }
+
+  .project-header {
+    font-size: 50px;
+    margin: 10px 0px 40px 10vw;
+  }
+
+// contact
+.contact-info {
+  height: 300px;
+  font-size: 20px;
+}
+.contact-info p{
+  line-height: 24px;
+}
+.contact-header {
+  font-size: 34px;
+  width: 170px;
+  margin: 50px 0px 40px 0;
+  border-bottom: 10px solid $middle-blue-green;
+  letter-spacing: .1rem;
+}
+
+}

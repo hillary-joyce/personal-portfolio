@@ -3,6 +3,7 @@
 @import "partials/fonts";
 @import "partials/mixins";
 
+
 body, h1, h2, h3, p {
   font-family: $poppins;
   font-weight: 200;
@@ -200,3 +201,5 @@ body, h1, h2, h3, p {
     opacity: 1;
   }
 }
+
+@import "partials/media-queries";
