@@ -124,4 +124,16 @@
   letter-spacing: .1rem;
 }
 
+
+const person = {
+  name: "Barbara",
+  greet: () => {
+    return reallyGreet = () => {
+      return `Hi, I'm ${this.name}`;
+    };
+  }
+};
+person.greet()();
+
+
 }
