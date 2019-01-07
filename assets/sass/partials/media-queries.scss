@@ -48,10 +48,6 @@
 
 
 ////// SKILLS
-  .skills-div {
-    height: auto;
-    background-position: center;
-  }
 
   .skills-header {
     font-size: 34px;
@@ -123,17 +119,39 @@
   border-bottom: 10px solid $middle-blue-green;
   letter-spacing: .1rem;
 }
+}
 
 
-const person = {
-  name: "Barbara",
-  greet: () => {
-    return reallyGreet = () => {
-      return `Hi, I'm ${this.name}`;
-    };
+@media only screen and (max-width : 1000px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
-};
-person.greet()();
 
+  .skills-div {
+    height: auto;
+    background-position: center;
+  }
+
+  .project-header {
+    margin: 100px 0px 40px 55vw;
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media only screen and (max-width : 590px) {
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-header {
+    margin: 100px 0px 40px 35vw;
+  }
 
 }
